@@ -61,7 +61,7 @@ declare namespace mqtt {
       /** protocol://host:port, protocol is [mqtt | mqtts] */
       uri: string;
     } & ClientOptions
-  );
+  ): Promise<IMqttClient>;
   function createClient(
     options: {
       /** ipaddress or host name (override by uri if set) */
