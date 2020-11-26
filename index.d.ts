@@ -52,6 +52,8 @@ export type ClientOptions = {
   /** override by uri if set to mqtts or wss */
   tls?: boolean;
   keepAlive?: number;
+  /** Set to true if user or pass exist */
+  auth?: boolean;
 };
 declare namespace mqtt {
   function createClient(
@@ -66,8 +68,6 @@ declare namespace mqtt {
       host: string;
       /** port number (override by uri if set) */
       port: string;
-      /** Set to true if user or pass exist */
-      auth: boolean;
     } & ClientOptions
   ): Promise<IMqttClient>;
   function removeClient(client: IMqttClient): void;
