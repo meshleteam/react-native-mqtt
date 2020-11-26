@@ -1,6 +1,6 @@
 {
   "name": "@meshleteam/react-native-mqtt",
-  "version": "0.4.26",
+  "version": "0.4.27",
   "description": "MQTT client for react-native",
   "main": "index.js",
   "types": "index.d.ts",
