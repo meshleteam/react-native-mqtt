@@ -1,14 +1,15 @@
 {
-  "name": "react-native-mqtt",
+  "name": "@meshleteam/react-native-mqtt",
   "version": "0.4.25",
   "description": "MQTT client for react-native",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meshleteam/react-native-mqtt.git"
+    "url": "git://github.com:meshleteam/react-native-mqtt.git"
   },
   "keywords": [
     "mqtt",
@@ -16,6 +17,9 @@
     "iot"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bugs": {
     "url": "https://github.com/meshleteam/react-native-mqtt/issues"
   },
